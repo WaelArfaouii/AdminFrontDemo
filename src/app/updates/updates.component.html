@@ -1,1 +1,54 @@
-<p>updates works!</p>
+<div class="right">
+
+  <div class="top">
+
+    <div class="theme-toggler">
+                    <span class="material-symbols-outlined active">
+                         light_mode
+                    </span>
+      <span class="material-symbols-outlined">
+                         dark_mode
+                    </span>
+    </div>
+
+    <div class="profile">
+      <div class="info">
+        <p>Hey , <b>Wael</b></p>
+        <small class="text-muted">Admin</small>
+      </div>
+      <div class="profile-photo">
+        <img src="https://headshots-inc.com/wp-content/uploads/2021/01/FINAL-Blog-Images.jpg" alt="profile_photo">
+      </div>
+    </div>
+
+  </div>
+
+  <!--        End Top section -->
+
+  <div class="recent-updates">
+    <div class="head-up">
+                <span class="material-symbols-outlined">
+            update
+            </span>
+      <h2>Recent updates</h2>
+    </div>
+    <div class="updates">
+      <div *ngFor="let update of updates" class="update">
+        <div class="profile-photo">
+          <img [src]="update.profilePhotoSrc" alt="">
+        </div>
+        <div class="message">
+          <p><b>{{ update.userName }}</b> {{ update.action }}.</p>
+          <small class="text-muted">
+            {{ update.timestamp }} . . .
+          </small>
+        </div>
+      </div>
+
+      <a href="#" class="more">More ..</a>
+
+    </div>
+  </div>
+
+
+</div>

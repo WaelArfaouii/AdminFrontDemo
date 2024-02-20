@@ -56,9 +56,17 @@ main .recent-rules a {
   text-align: center;
   display: block;
   margin: 1rem auto;
-  color: var(--color-primary);
+  color: var(--color-info-dark);
 }
 
 .details:hover {
   cursor: pointer;
+}
+
+.status-enabled {
+  color: #2A482EFF;
+}
+
+.status-disabled {
+  color: #772828FF;
 }
